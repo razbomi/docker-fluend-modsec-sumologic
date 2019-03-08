@@ -1,6 +1,5 @@
 FROM fluent/fluentd:v1.3 as builder
 
-
 RUN apk add --no-cache --update --virtual .build-deps \
         sudo build-base ruby-dev \
  && sudo gem install \
