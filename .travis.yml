@@ -1,0 +1,9 @@
+language: bash
+services: docker
+
+script:
+  - make build
+  - make test
+
+after_success:
+  - if [[ "$TRAVIS_BRANCH" == "master" ]]; then make push; fi
