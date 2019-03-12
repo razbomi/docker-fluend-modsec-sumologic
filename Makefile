@@ -1,4 +1,4 @@
-IMAGE := razbomi/docker-fluend-modsec-sumologic:latest
+IMAGE := razbomi/docker-fluentd-modsec-sumologic:latest
 
 .PHONY: build push test
 .DEFAULT_GOAL: test
